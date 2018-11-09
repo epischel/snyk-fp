@@ -1,11 +1,11 @@
 buildscript {
     ext {
-        springBootVersion = "2.0.6.RELEASE"
+        springBootVersion = "2.0.3.RELEASE"
     }
     
 }
 
-ext.camelVersion = "2.22.1"
+ext.camelVersion = "2.22.0"
 ext.springSecurityVersion="5.0.7.RELEASE"
 
 dependencies {
@@ -25,8 +25,8 @@ dependencies {
     compile group: "org.springframework.boot", name: "spring-boot-starter-security", version: springBootVersion
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-mail', version: springBootVersion
 
-    compile group: 'org.springframework.security', name: 'spring-security-ldap'//, version: springSecurityVersion
-    compile group: "org.springframework.security", name: "spring-security-test"//, version: springSecurityVersion
+    compile group: 'org.springframework.security', name: 'spring-security-ldap', version: springSecurityVersion
+    compile group: "org.springframework.security", name: "spring-security-test", version: springSecurityVersion
     compile(group: "org.springframework.ws", name: "spring-ws-security", version: "3.0.3.RELEASE") {
         exclude module: "ehcache"
     }
